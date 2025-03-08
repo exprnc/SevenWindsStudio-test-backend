@@ -24,6 +24,7 @@ import mobi.sevenwinds.modules.serviceRouting
 import mobi.sevenwinds.modules.swaggerRouting
 import org.slf4j.LoggerFactory
 import org.slf4j.event.Level
+import java.text.SimpleDateFormat
 
 fun main(args: Array<String>): Unit = EngineMain.main(args)
 
@@ -41,6 +42,7 @@ fun Application.module() {
             configure(DeserializationFeature.FAIL_ON_UNKNOWN_PROPERTIES, false)
             registerModule(Jdk8Module())
             registerModule(JodaModule())
+            disable(SerializationFeature.WRITE_DATES_AS_TIMESTAMPS)
         }
     }
 

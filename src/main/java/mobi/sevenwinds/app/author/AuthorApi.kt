@@ -1,5 +1,6 @@
 package mobi.sevenwinds.app.author
 
+import com.fasterxml.jackson.annotation.JsonFormat
 import com.papsign.ktor.openapigen.annotations.type.string.length.MinLength
 import com.papsign.ktor.openapigen.route.info
 import com.papsign.ktor.openapigen.route.path.normal.NormalOpenAPIRoute
